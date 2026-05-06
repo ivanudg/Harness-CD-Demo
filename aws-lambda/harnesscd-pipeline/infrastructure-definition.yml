@@ -1,0 +1,12 @@
+infrastructureDefinition:
+  name: aws-infra
+  identifier: awsinfra
+  orgIdentifier: your_org_id
+  projectIdentifier: your_project_id
+  environmentRef: lambda_env
+  deploymentType: AwsLambda
+  type: AwsLambda
+  spec:
+    connectorRef: aws-connector
+    region: AWS_REGION
+  allowSimultaneousDeployments: false
